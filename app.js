@@ -18,7 +18,7 @@ const getInfo = async address => {
     const { temp } = await getWeather(lat, lon)
     console.log(`El clima en ${city} es de ${temp}`.brightGreen)
   } catch (error) {
-    console.log(`No se pudo determinar el clima de ${city}`.brightRed)
+    console.log(`No se pudo determinar el clima de ${address}`.brightRed)
     console.log(`${error}`.grey.italic)
   }
 }
